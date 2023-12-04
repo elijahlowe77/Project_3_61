@@ -1,0 +1,17 @@
+﻿  game.cpp
+c:\users\e\source\repos\test\test\game.cpp(122): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(345): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(346): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(351): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(352): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(357): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(358): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(363): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(364): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(369): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(370): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(375): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(376): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(395): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(414): warning C4101: 'e2': unreferenced local variable
+sfml-graphics-d.lib(sfml-graphics-d-2.dll) : fatal error LNK1112: module machine type 'x86' conflicts with target machine type 'x64'

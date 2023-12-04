@@ -1,0 +1,109 @@
+﻿  game.cpp
+c:\users\e\source\repos\test\test\game.cpp(122): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(136): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(148): warning C4018: '<': signed/unsigned mismatch
+c:\users\e\source\repos\test\test\game.cpp(157): warning C4018: '<': signed/unsigned mismatch
+c:\users\e\source\repos\test\test\game.cpp(165): warning C4018: '<': signed/unsigned mismatch
+c:\users\e\source\repos\test\test\game.cpp(249): warning C4018: '>=': signed/unsigned mismatch
+c:\users\e\source\repos\test\test\game.cpp(261): warning C4244: '*=': conversion from 'double' to 'int', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(279): warning C4018: '>': signed/unsigned mismatch
+c:\users\e\source\repos\test\test\game.cpp(296): warning C4018: '>=': signed/unsigned mismatch
+c:\users\e\source\repos\test\test\game.cpp(321): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(322): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(323): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(324): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(325): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(326): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(327): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(328): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(329): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(465): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(473): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(481): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(492): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(500): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(509): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(521): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(529): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(537): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(561): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(569): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(577): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(588): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(596): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(605): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(617): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(625): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(633): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(902): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(903): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(908): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(909): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(914): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(915): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(920): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(921): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(926): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(927): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(932): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(933): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(978): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(1084): warning C4018: '<': signed/unsigned mismatch
+c:\users\e\source\repos\test\test\game.cpp(1095): warning C4018: '<': signed/unsigned mismatch
+c:\users\e\source\repos\test\test\game.cpp(1106): warning C4018: '<': signed/unsigned mismatch
+c:\users\e\source\repos\test\test\game.cpp(1121): warning C4018: '<': signed/unsigned mismatch
+c:\users\e\source\repos\test\test\game.cpp(1132): warning C4018: '<': signed/unsigned mismatch
+c:\users\e\source\repos\test\test\game.cpp(1143): warning C4018: '<': signed/unsigned mismatch
+c:\users\e\source\repos\test\test\game.cpp(1156): warning C4018: '<': signed/unsigned mismatch
+c:\users\e\source\repos\test\test\game.cpp(1167): warning C4018: '<': signed/unsigned mismatch
+c:\users\e\source\repos\test\test\game.cpp(1178): warning C4018: '<': signed/unsigned mismatch
+c:\users\e\source\repos\test\test\game.cpp(1296): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(1300): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(1304): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(1317): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(1317): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(1321): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(1325): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(1338): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(1338): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(1342): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(1346): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(1361): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(1365): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(1365): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(1369): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(1378): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(1378): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(1382): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(1382): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(1386): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(1396): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(1396): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(1400): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(1400): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(1404): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(1415): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(1419): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(1423): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(1432): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(1432): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(1436): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(1436): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(1440): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(1450): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(1450): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(1454): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\e\source\repos\test\test\game.cpp(1458): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\e\source\repos\test\test\game.cpp(997): warning C4101: 'e2': unreferenced local variable
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\utility(240): warning C4244: 'initializing': conversion from '_Ty' to '_Ty2', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+          and
+          [
+              _Ty2=float
+          ]
+  c:\users\e\source\repos\test\test\game.cpp(170): note: see reference to function template instantiation 'std::pair<std::string,float>::pair<const char*,int,0>(std::pair<const char *,int> &&) noexcept(false)' being compiled
+  c:\users\e\source\repos\test\test\game.cpp(170): note: see reference to function template instantiation 'std::pair<std::string,float>::pair<const char*,int,0>(std::pair<const char *,int> &&) noexcept(false)' being compiled
+  test.vcxproj -> C:\Users\E\source\repos\test\Debug\test.exe
