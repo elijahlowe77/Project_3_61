@@ -1,10 +1,3 @@
-// test.cpp : This file contains the 'main' function. Program execution begins and ends there.
-
-
-
-
-
-
 
 #include "SFML/Graphics.hpp"
 #include <set>
@@ -32,12 +25,10 @@ public:
 		Clicked = false;
 	}
 	bool mouseOver1(sf::RenderWindow& window) {
-
 		Vector2f mousePos = static_cast<Vector2f>(Mouse::getPosition(window));
 		return circle.getGlobalBounds().contains(mousePos);
 	}
 	bool mouseOver2(sf::RenderWindow& window) {
-
 		Vector2f mousePos = static_cast<Vector2f>(Mouse::getPosition(window));
 		return circle2.getGlobalBounds().contains(mousePos);
 	}
@@ -52,7 +43,6 @@ public:
 				window.draw(circle2);
 				return 1;
 			}
-
 			if (mouseOver2(window)) {
 				circle2.setFillColor(Color::Blue);
 				window.draw(circle2);
@@ -62,24 +52,15 @@ public:
 			}
 
 		}
-
-
-
 		return -1;
-
-
 	}
-
-
-
-
 
 };
 class Imagef {
 public:
 	Imagef(String state) {
 
-		std::string def = "C:\\Users\\E\\source\\repos\\test\\test\\States";
+		std::string def = "States";
 		state = def + "\\" + state + ".png";
 		if (!texture.loadFromFile(state)) {
 			std::cout << "FAILED TO LOAD !!";
@@ -87,10 +68,8 @@ public:
 		std::cout << "default";
 		image.setTexture(texture);
 		image.setPosition(500, 200);
-		//image.setScale(0.35f, 0.35f);
 
 	}
-
 
 	Texture texture; Texture texture2;
 	Sprite image;  Sprite image2;
@@ -217,7 +196,6 @@ public:
 	int capacity;
 	float loadFactor;
 	vector<pair<string, float>> map; // pair of key amd value
-	// seperate chaining based on addition of ascii values
 	HashMap(int _capacity, float _loadFactor) {
 		loadFactor = _loadFactor;
 		capacity = _capacity;
@@ -446,14 +424,7 @@ public:
 };
 
 void dataRankerHashMap(set<string>& iterators,  Heap& substanceRates, HashMap& test, bool marijuana, bool drug, bool alcohol, bool young, bool youngAdult, bool adult) {
-
-	cout << "Weed " << marijuana << endl; 
-
-	cout << "Drug " << drug << endl; 
-
-	cout << "Alc " << alcohol << endl;
 	if (!marijuana) {
-		
 		if (!young) {
 
 			for (int i = 2010; i < 2018; i++) {
@@ -484,7 +455,6 @@ void dataRankerHashMap(set<string>& iterators,  Heap& substanceRates, HashMap& t
 		}
 	}
 	if (!alcohol) { 
-		
 		if (!young) {
 			for (int i = 2010; i < 2018; i++) {
 				string innerMapName = to_string(i) + "1217Alcohol";
@@ -512,7 +482,6 @@ void dataRankerHashMap(set<string>& iterators,  Heap& substanceRates, HashMap& t
 		}
 	}
 	if (!drug) { 
-
 		if (!young) {
 			for (int i = 2010; i < 2018; i++) { 
 				
@@ -543,15 +512,9 @@ void dataRankerHashMap(set<string>& iterators,  Heap& substanceRates, HashMap& t
 } 
 void dataRankerMap(set<string>& iterators, Heap& substanceRates, Map& test, bool marijuana, bool drug, bool alcohol, bool young, bool youngAdult, bool adult) {
 
-	cout << "Weed " << marijuana << endl;
-
-	cout << "Drug " << drug << endl;
-
-	cout << "Alc " << alcohol << endl;
 	if (!marijuana) {
 
 		if (!young) {
-
 			for (int i = 2010; i < 2018; i++) {
 
 				string innerMapName = to_string(i) + "1217Marijuana";
@@ -580,7 +543,6 @@ void dataRankerMap(set<string>& iterators, Heap& substanceRates, Map& test, bool
 		}
 	}
 	if (!alcohol) {
-
 		if (!young) {
 			for (int i = 2010; i < 2018; i++) {
 				string innerMapName = to_string(i) + "1217Alcohol";
@@ -608,7 +570,6 @@ void dataRankerMap(set<string>& iterators, Heap& substanceRates, Map& test, bool
 		}
 	}
 	if (!drug) {
-
 		if (!young) {
 			for (int i = 2010; i < 2018; i++) {
 
@@ -641,7 +602,8 @@ void dataRankerMap(set<string>& iterators, Heap& substanceRates, Map& test, bool
 
 
 
-int main(){
+int main(){ 
+
 	vector<string> states = {
 	   "Alabama", "Alaska", "Arizona", "Arkansas", "California",
 	   "Colorado", "Connecticut", "Delaware", "Florida", "Georgia",
@@ -663,14 +625,10 @@ int main(){
 	sf::Font font; sf::Text a1; sf::Text a2; sf::Text a3; sf::Text stateE;
 	sf::Text go;
 
-	//output string vector in order of 1: State, 2: Alcohol(1 or 0), 3: Cocaine, 4:Marijuana 5: 12-17, 6:1-25, 7: 25+
-	vector<string> output(7);
 
 	if (!font.loadFromFile("font.ttf")) {
 		return -1;
 	}
-
-
 
 	ttext.setFont(font);
 	ttext.setFillColor(sf::Color::White);
@@ -703,7 +661,6 @@ int main(){
 	ask.setFillColor(sf::Color::White);
 	ask.setPosition(75, 150);
 
-
 	go.setFont(font);
 	go.setFillColor(sf::Color::White);
 
@@ -712,7 +669,6 @@ int main(){
 	go.setFillColor(sf::Color::Red);
 	go.setPosition(500, 740);
 
-
 	ask2.setFont(font);
 	ask2.setFillColor(sf::Color::White);
 
@@ -720,7 +676,6 @@ int main(){
 	ask2.setString("Please Select...  (y/n)");
 	ask2.setFillColor(sf::Color::White);
 	ask2.setPosition(75, 275);
-
 
 	alc.setFont(font);
 	alc.setFillColor(sf::Color::White);
@@ -735,7 +690,7 @@ int main(){
 	hard.setFillColor(sf::Color::White);
 
 	hard.setCharacterSize(20);
-	hard.setString("Cocaine");
+	hard.setString("Hard Drugs");
 	hard.setFillColor(sf::Color::White);
 	hard.setPosition(75, 400);
 	Button hardButton(200, 395, 15, sf::Color::Green);
@@ -766,7 +721,6 @@ int main(){
 	a1.setFillColor(sf::Color::White);
 	a1.setPosition(75, 550);
 	Button a1Button(200, 545, 15, sf::Color::Green);
-
 
 	a2.setFont(font);
 	a2.setFillColor(sf::Color::White);
@@ -828,22 +782,18 @@ int main(){
 
 	Button structButton(245, 679, 15, sf::Color::Red);
 	
-
-
-
-	
-	int order = 0;
+	int order = 0; //Once we insert state, its official
 
 	//button
 	string inputString;
 	int alcOpt = 1; int hardOpt = 1; int zaOpt = 1; int a1Opt = 1; int a2Opt = 1; int a3Opt = 1;
 
+	//set to ohio since we change later 
 	Imagef statef("Ohio"); Imagef hardf("Ohio"); Imagef zaf("Ohio");
 	Imagef a1f("Ohio"); Imagef a2f("Ohio"); Imagef a3f("Ohio"); Imagef alcs("Alc"); Imagef arrow("RedArrow");
 
 	using namespace std;
 	while (window.isOpen()) {
-
 
 		while (window.pollEvent(e)) {
 
@@ -852,7 +802,6 @@ int main(){
 			if (order == 0)
 			{
 				auto iter = find(states.begin(), states.end(), inputString);
-
 				if (e.type == sf::Event::TextEntered) {
 
 					if (e.text.unicode < 126) {
@@ -866,27 +815,18 @@ int main(){
 
 							if (iter != states.end())
 							{
-								cout << "clicked entered: " << inputString << endl;
-								output[0] = inputString;
 								order++;
-
 								statef.set(inputString);
-
 							}
-
-							//inputString.clear();
 						}
 						else {
 							inputString += static_cast<char>(e.text.unicode);
 						}
-
 						stateE.setString(inputString);
-
 					}
-
 				}
+			} 
 
-			}
 			int optA = alcButton.update(window);
 			int optH = hardButton.update(window);
 			int optZ = zaButton.update(window);
@@ -935,11 +875,9 @@ int main(){
 			if (isMax > 0) { 
 				
 				if ((isMax - 1) == 0) { 
-					
 					heapName = "max";
 				}
 				else {
-			
 					heapName = "min";
 				}
 			}
@@ -948,14 +886,10 @@ int main(){
 					isMap = true;
 				}
 				else { 
-					
 					isMap = false;
 				}
 			}
-			
-
 		}
-
 
 		window.clear();
 		window.draw(ttext); window.draw(state); window.draw(ask); window.draw(alc); window.draw(ask2); window.draw(hard);
@@ -986,9 +920,6 @@ int main(){
 			}
 		}
 
-
-		//alcButton.draw(window);
-
 		window.display();
 
 	}
@@ -1006,7 +937,6 @@ int main(){
 	Imagef stateT("Ohio");  stateT.set(inputString,970,63);  
 
 
-	//HashMap test(300, 0.5);
 	HashMap test(300, 0.5); 
 	insertData(test, "drugs.csv", inputString); 
 
@@ -1035,7 +965,6 @@ int main(){
 		dataRankerMap(iterators, substanceRates, test2, zaOpt, hardOpt, alcOpt, a1Opt, a2Opt, a3Opt); //Map Implimentation
 	}
 	
-
 	set<string> added;
 	while (substanceRates.getSize() != 0) { 
 
@@ -1046,15 +975,14 @@ int main(){
 				if (!isMap)
 				{
 					i = test.map[hashedIndex]; 
-					cout << "Hash" << endl;
+					
 				} 
 				else {
 					i = test2.getPair(j);  
-					cout << "Map" << endl;
+					
 				}
 				if (i.first == substanceRates.getTop().first && i.second == substanceRates.getTop().second) {
 					
-				
 				sf::Text tempText;
 				tempText.setFont(font);
 				tempText.setFillColor(sf::Color::White);
@@ -1068,15 +996,14 @@ int main(){
 				string substance = i.first.substr(8, i.first.size() - 8);   
 				string rateS =  to_string(int(substanceRates.getTop().second));   
 				string security = substance + ageGroup + year + rateS;
-				//string rank = to_string(displayer.size() + 1); 
 				
-				
+				string tempFinal = ". Year: " + year + ", Rate Per 1000: " + rateS + ", " + to_string(((stoi(rateS)*1.0f) / 1000.0f * 100.0f)).substr(0, 5) + "%";
 				if (substance == "Alcohol" || substance == "lcohol") {
 					if (ageGroup == "1217")  
 					{  
 					
 						string rank = to_string(A1217.size() + 1);
-						string tempFinal = rank + ". Year: " + year + ", Percentage of Population Abuse: " + rateS + "%";
+						tempFinal = rank + tempFinal;
 						tempText.setString(tempFinal); 
 						  
 						int sizePrev = added.size();
@@ -1087,7 +1014,7 @@ int main(){
 					if (ageGroup == "1825")  
 					{
 						string rank = to_string(A1825.size() + 1);
-						string tempFinal = rank + ". Year: " + year + ", Percentage of Population Abuse: " + rateS + "%";
+						tempFinal = rank + tempFinal;
 						tempText.setString(tempFinal);  
 					
 						int sizePrev = added.size();
@@ -1098,7 +1025,7 @@ int main(){
 					if (ageGroup == "26+A")  
 					{
 						string rank = to_string(A26.size() + 1);
-						string tempFinal = rank + ". Year: " + year + ", Percentage of Population Abuse: " + rateS + "%";
+						tempFinal = rank + tempFinal;
 						tempText.setString(tempFinal); 
 					
 						int sizePrev = added.size();
@@ -1111,9 +1038,8 @@ int main(){
 					
 					if (ageGroup == "1217")
 					{ 
-						
 						string rank = to_string(C1217.size() + 1);
-						string tempFinal = rank + ". Year: " + year + ", Percentage of Population Abuse: " + rateS + "%";
+						tempFinal = rank + tempFinal;
 						tempText.setString(tempFinal); 
 					
 						int sizePrev = added.size();
@@ -1124,7 +1050,7 @@ int main(){
 					if (ageGroup == "1825")
 					{
 						string rank = to_string(C1825.size() + 1);
-						string tempFinal = rank + ". Year: " + year + ", Percentage of Population Abuse: " + rateS + "%";
+						tempFinal = rank + tempFinal;
 						tempText.setString(tempFinal); 
 					
 						int sizePrev = added.size();
@@ -1135,7 +1061,7 @@ int main(){
 					if (ageGroup == "26+I")
 					{
 						string rank = to_string(C26.size() + 1);
-						string tempFinal = rank + ". Year: " + year + ", Percentage of Population Abuse: " + rateS + "%";
+						tempFinal = rank + tempFinal;
 						tempText.setString(tempFinal); 
 					
 						int sizePrev = added.size();
@@ -1148,7 +1074,7 @@ int main(){
 					if (ageGroup == "1217")
 					{
 						string rank = to_string(M1217.size() + 1);
-						string tempFinal = rank + ". Year: " + year + ", Percentage of Population Abuse: " + rateS + "%";
+						tempFinal = rank + tempFinal;
 						tempText.setString(tempFinal); 
 						
 						int sizePrev = added.size();
@@ -1159,7 +1085,7 @@ int main(){
 					if (ageGroup == "1825")
 					{
 						string rank = to_string(M1825.size() + 1);
-						string tempFinal = rank + ". Year: " + year + ", Percentage of Population Abuse: " + rateS + "%";
+						tempFinal = rank + tempFinal;
 						tempText.setString(tempFinal); 
 					
 						int sizePrev = added.size();
@@ -1170,7 +1096,7 @@ int main(){
 					if (ageGroup == "26+M")
 					{
 						string rank = to_string(M26.size() + 1);
-						string tempFinal = rank + ". Year: " + year + ", Percentage of Population Abuse: " + rateS + "%";
+						tempFinal = rank + tempFinal;
 						tempText.setString(tempFinal); 
 						
 						int sizePrev = added.size();
@@ -1181,11 +1107,6 @@ int main(){
 				}
 
 				}
-				//string tempTotal = rank + ". Year: " + year + " Substance: " + substance + " Age group: " + ageGroup + " Rate: " + rateS;
-				//cout << "TEMP TOTAL!! " <<tempTotal;
-				//tempText.setString(tempTotal);
-				//displayer.push_back(tempText); 
-			
 			}
 		
 		substanceRates.extractTop();
@@ -1198,7 +1119,7 @@ int main(){
 	youngDrinkers.setFillColor(sf::Color::White);
 	youngDrinkers.setCharacterSize(15);
 	youngDrinkers.setFillColor(sf::Color::White); 
-	youngDrinkers.setString("Proportion of 12-17 Year Olds Who Drink");
+	youngDrinkers.setString("Per 1000 12-17 Year Olds Who Drink");
 	youngDrinkers.setPosition(50,300); 
 
 	sf::Sprite a1825f; sf::Sprite alc1825f;
@@ -1207,7 +1128,7 @@ int main(){
 	adultDrinkers.setFillColor(sf::Color::White);
 	adultDrinkers.setCharacterSize(15);
 	adultDrinkers.setFillColor(sf::Color::White);
-	adultDrinkers.setString("Proportion of 18-25 Year Olds Who Drink");
+	adultDrinkers.setString("Per 1000 18-25 Year Olds Who Drink");
 	adultDrinkers.setPosition(50, 650); 
 
 
@@ -1217,7 +1138,7 @@ int main(){
 	oldDrinkers.setFillColor(sf::Color::White);
 	oldDrinkers.setCharacterSize(15);
 	oldDrinkers.setFillColor(sf::Color::White);
-	oldDrinkers.setString("Proportion of 26+ Year Olds Who Drink");
+	oldDrinkers.setString("Per 1000 26+ Year Olds Who Drink");
 	oldDrinkers.setPosition(50, 650 + 350);
 
 	sf::Sprite c1217f; sf::Sprite coc1217f;
@@ -1226,7 +1147,7 @@ int main(){
 	youngHard.setFillColor(sf::Color::White);
 	youngHard.setCharacterSize(15);
 	youngHard.setFillColor(sf::Color::White);
-	youngHard.setString("Proportion of 12-17 Year Olds Who Do Hard Drugs");
+	youngHard.setString("Per 1000 12-17 Year Olds Who Do Hard Drugs");
 	youngHard.setPosition(50 + 530, 300);
 
 	sf::Sprite c1825f; sf::Sprite coc1825f;
@@ -1235,7 +1156,7 @@ int main(){
 	adultHard.setFillColor(sf::Color::White);
 	adultHard.setCharacterSize(15);
 	adultHard.setFillColor(sf::Color::White);
-	adultHard.setString("Proportion of 18-25 Year Olds Who Do Hard Drugs");
+	adultHard.setString("Per 1000 18-25 Year Olds Who Do Hard Drugs");
 	adultHard.setPosition(50 + 530, 650);
 
 
@@ -1245,7 +1166,7 @@ int main(){
 	oldHard.setFillColor(sf::Color::White);
 	oldHard.setCharacterSize(15);
 	oldHard.setFillColor(sf::Color::White);
-	oldHard.setString("Proportion of 26+ Year Olds Who Do Hard Drugs");
+	oldHard.setString("Per 1000 26+ Year Olds Who Do Hard Drugs");
 	oldHard.setPosition(50 + 530, 650 + 350); 
 
 	sf::Sprite m1217f; sf::Sprite mar1217f;
@@ -1254,7 +1175,7 @@ int main(){
 	youngZa.setFillColor(sf::Color::White);
 	youngZa.setCharacterSize(15);
 	youngZa.setFillColor(sf::Color::White);
-	youngZa.setString("Proportion of 12-17 Year Olds Who Smoke Weed");
+	youngZa.setString("Per 1000 12-17 Year Olds Who Smoke Weed");
 	youngZa.setPosition(50 + 530*2, 300);
 
 	sf::Sprite m1825f; sf::Sprite mar1825f;
@@ -1263,7 +1184,7 @@ int main(){
 	adultZa.setFillColor(sf::Color::White);
 	adultZa.setCharacterSize(15);
 	adultZa.setFillColor(sf::Color::White);
-	adultZa.setString("Proportion of 18-25 Year Olds Who Smoke Weed");
+	adultZa.setString("Per 1000 18-25 Year Olds Who Smoke Weed");
 	adultZa.setPosition(50 + 530*2, 650);
 
 
@@ -1273,24 +1194,17 @@ int main(){
 	oldZa.setFillColor(sf::Color::White);
 	oldZa.setCharacterSize(15);
 	oldZa.setFillColor(sf::Color::White);
-	oldZa.setString("Proportion of 26+ Year Olds Who Smoke Weed");
+	oldZa.setString("Per 1000 26+ Year Olds Who Smoke Weed");
 	oldZa.setPosition(50 + 530*2, 650 + 350);
-
-
-	
-
 
 	while (window2.isOpen()) { 
 	
-		
-		//cout << "Hello";   
 		window.clear();   
 		int xPos = 50;
 		int yPos = 330; 
 		if(!alcOpt){ 
 			if(!a1Opt){
 			for (auto text : A1217) { 
-				//cout << text.getString().toAnsiString() << endl; 
 
 				//Teen Image 
 				a1f.set2("Teenager", 100, 160, 0.2); 
@@ -1311,8 +1225,6 @@ int main(){
 		if (!a2Opt) {
 			for (auto text : A1825) { 
 
-				//cout << text.getString().toAnsiString() << endl; 
-
 				//Adult Image 
 				a2f.set2("Adult", 100, 160 * 3.3, 0.2);
 				a1825f = a2f.image2;
@@ -1329,12 +1241,10 @@ int main(){
 		}
 		
 		yPos = 1025;   
-		cout << "sssssssssssssssssss" << yPos;
 		if (!a3Opt) {
 			for (auto text : A26) {
-				//cout << text.getString().toAnsiString() << endl; 
 
-				//Adult Image 
+				//Old Image 
 				a3f.set2("Old", 100, 160 * 5.5, 0.15);
 				a26f = a3f.image2;
 
@@ -1348,14 +1258,11 @@ int main(){
 				window2.draw(text);
 			}
 		}
-		
 		}
 		int shift2 = 7;
 		int xPos2 = 600; 
 		int yPos2 = 330;
 		for (auto text : C1217) { 
-			
-			//cout << text.getString().toAnsiString() << endl; 
 
 			//Teen Image 
 			a1f.set2("Teenager", 100 * shift2, 160, 0.2);
@@ -1372,7 +1279,6 @@ int main(){
 		}
 		yPos2 = 675;
 		for (auto text : C1825) {
-			//cout << text.getString().toAnsiString() << endl; 
 
 			//Adult Image 
 			a2f.set2("Adult", 100 * shift2, 160 * 3.3, 0.2);
@@ -1390,9 +1296,8 @@ int main(){
 		yPos2 = 1025;
 
 		for (auto text : C26) {
-			//cout << text.getString().toAnsiString() << endl; 
 
-			//Adult Image 
+			//Old Image 
 			a3f.set2("Old", 100 * shift2, 160 * 5.5, 0.15);
 			c26f = a3f.image2;
 
@@ -1409,13 +1314,12 @@ int main(){
 		int xPos3 = 1130;
 		int yPos3 = 330;
 		for (auto text : M1217) {
-			cout << text.getString().toAnsiString() << endl;
 
 			//Teen Image 
 			a1f.set2("Teenager", 100 * shift3, 160, 0.2);
 			m1217f = a1f.image2;
 
-			//Drug Image
+			//Weed Image
 			zaf.set2("Weed", 220 * shift3 / 2, 200, 0.1);
 			mar1217f = zaf.image2;
 
@@ -1426,13 +1330,12 @@ int main(){
 		}
 		yPos3 = 675;
 		for (auto text : M1825) {
-			cout << text.getString().toAnsiString() << endl;
 
 			//Adult Image 
 			a2f.set2("Adult", 100 * shift3, 160 * 3.3, 0.2);
 			m1825f = a2f.image2;
 
-			//Drug Image
+			//Weed Image
 			zaf.set2("Weed", 220 * shift3 / 2, 190 * 3.1, 0.1);
 			mar1825f = zaf.image2;
 
@@ -1444,24 +1347,22 @@ int main(){
 		yPos3 = 1025;
 
 		for (auto text : M26) {
-			cout << text.getString().toAnsiString() << endl;
 
-			//Adult Image 
+			//Old Image 
 			a3f.set2("Old", 100 * shift3, 160 * 5.5, 0.15);
 			m26f = a3f.image2;
 
-			//Drug Image
+			//Weed Image
 			zaf.set2("Weed", 220 * shift3 / 2, 187 * 5, 0.1);
 			mar26f = zaf.image2;
-
 
 			text.setPosition(xPos3, yPos3);
 			yPos3 += 25;
 			window2.draw(text);
 		}
 
+		window2.draw(title); 
 
-		window2.draw(title);
 		if(!alcOpt){ 
 			if (!a1Opt) {
 				window2.draw(a1217f); window2.draw(alc1217f); window2.draw(youngDrinkers);
@@ -1472,8 +1373,6 @@ int main(){
 			if (!a3Opt) {
 				window2.draw(a26f); window2.draw(alc26f); window2.draw(oldDrinkers);
 			}
-			
-			
 		} 
 		if (!hardOpt) {
 			if (!a1Opt) {
@@ -1497,13 +1396,6 @@ int main(){
 				window2.draw(m26f); window2.draw(mar26f); window2.draw(oldZa);
 			}
 		}
-		
-		
-		
-
-		
-		
-		
 
 		window2.draw(stateT.image2);
 
@@ -1514,13 +1406,3 @@ int main(){
 	std::cout << "Hello World!\n";
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
